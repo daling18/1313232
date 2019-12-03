@@ -1,22 +1,22 @@
-.App {
-  text-align: center;
+.my-enter{
+    opacity: 0;
+    transform:rotate(360deg);
 }
-
-.App-logo {
-  height: 40vmin;
+.my-enter-active{
+    transition: all 1s linear;
+    transform:rotate(0deg);
+    opacity: 1;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.my-enter-done,.my-exit{
+    opacity: 1;
+    transform:rotate(0deg);
 }
-
-.App-link {
-  color: #09d3ac;
+.my-exit-active{
+    transition: all 1s linear;
+    transform:rotate(360deg);
+    opacity: 0;
+}
+.my-exit-done{
+    opacity: 0;
+    transform:rotate(360deg);
 }
